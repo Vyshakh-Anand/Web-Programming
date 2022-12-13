@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+function validate_form()
+{
+let x=document.myForm.fname.value;
+let y=document.myForm.fname1.value;
+alert("UNDA"+x);
+if(x==""||y=="")
+{
+alert("Name must be filled out 🍑️👈️😐️");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<h2>JAVASCRIPT VALIDATION</h2>
+<form name="myForm" action="/action_page.php" onSubmit="return validate_form()" method="post">
+first name<input type="text" name="fname"><br><br>
+last name<input type="text" name="fname1"><br><br>
+<input type="submit" value="Submit">
+</body>
+</form>
+</html>
